@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    font-family: "Montserrat";
+}
+
+.forBanner{
+    width: 100%;
+    background-color: #d50000;
+    box-shadow: 1px 2px 5px #645858;
+    position: fixed;
+    height: .7in;
+}
+
+.logo{
+    height: 42px;
+    padding: 10px;
+    padding-left: 95px;
+}
+
+#navBar{
+    float: right;
+    margin-top: 15px;
+    margin-right: 90px;
+}
+
+#navBar ul li a{
+    display:block;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:12px;
+	line-height:32px;
+	padding:0 15px;
+    font-family:"HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: white;
+}
+
+#navBar ul li{
+    position:relative;
+	margin:0;
+    padding:0;
+}
+
+#navBar ul ul{
+    display:none;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:rgb(209, 1, 1);
+    padding:0;
+}
+
+#navBar ul ul li{
+    float:none;
+	width:200px
+}
+
+#navBar ul li:hover ul{
+    display:block;
+}
+
+.underBanner{
+    background-color: #757575;
+    padding-bottom: 35px;
+    padding-top: 65px;
+}
+
+.timeBox{
+    float: left;
+    padding: 10px 0px 10px 100px;
+    color: white;
+    font-size: 12px;
+}
+
+img.socialMedia{
+    height: 17px;
+}
+
+div.socialMedia{
+    float: right;
+    margin-right: 100px;
+}
+ul li {
+    list-style-type: none;
+    float: left;
+    padding: 10px 5px 10px 5px;
+}
+
+section{
+    color: red;
+    text-align: center;
+    padding: 25px;
+    border-bottom: solid;
+    border-bottom-color: #dddddd;
+    border-bottom-width: 1px;
+}
+
+p{
+    padding: 0px 10px;
+    font-size: 20px;
+}
+.slideShow{
+    width: 305px;
+    height: 450px;
+    margin: 10px;
+    box-shadow: 3px 5px 10px #645858;
+}
+
+.slideShow:hover{
+    box-shadow: 5px 5px 5px #645858;
+}
+
+.slideShowContainer{
+    flex: 25%;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.forFooter{
+    width: 100%;
+    position: absolute;
+    background: #d50000;
+    font-family: 'Montserrat';
+    color: white;
+    bottom: 0;
+}
+
+.forFooterHome{
+    width: 100%;
+    position: absolute;
+    background: #d50000;
+    font-family: 'Montserrat';
+    color: white;
+}
+
+.forFooter p{
+    font-size: 15px;    
+    padding: 10px 0 10px 0; 
+    text-align: center;
+}
+
+.forFooterHome p{
+    font-size: 15px;    
+    padding: 10px 0 10px 0; 
+    text-align: center;
+}
+
+#navBar ul li ul li a{
+    color: white;
+    background: #a51616;
+}
+
+
+#navBar ul li:hover{
+    background-color: #c01818;
+}
+
+#navBar ul li ul li a:hover{
+    background-color: #c01818;
+    border: white solid 1px;
+}
