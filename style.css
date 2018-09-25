@@ -123,7 +123,7 @@ p{
 
 .forFooter{
     width: 100%;
-    position: absolute;
+    position: sticky;
     background: #d50000;
     font-family: 'Montserrat';
     color: white;
