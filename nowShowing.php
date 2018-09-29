@@ -17,7 +17,7 @@
 <body onload="startTime()">
     <banner>
         <div class="forBanner">
-            <a href="home.php"><img class="logo" src="img/logo.png"></a>
+            <a href="index.php"><img class="logo" src="img/logo.png"></a>
                 <nav id="navBar">
                     <ul>
                         <li><a href="#" style="color: yellow">SEE SCHEDULE</a>
@@ -68,7 +68,7 @@
                 if($result = mysqli_query($link, $sql)){
                     if(mysqli_num_rows($result) > 0){
                         while($row = mysqli_fetch_array($result)){
-                                echo "<a href=''><img class='slideShow' src='" . $row['posterPath'] . "'></a>";
+                                echo "<a href='movieDetails.php?param=" . $row['idMovie'] . "'>" . "<img class='slideShow' src='" . $row['posterPath'] . "'></a>";
                         }
                         mysqli_free_result($result);
                     } else{

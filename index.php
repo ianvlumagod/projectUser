@@ -38,31 +38,30 @@
         </div>
     </banner>
 
-        <div class="underBanner">
-            <div class="timeBox">
-                <span id="time"></span>
-                |
-                <span id="date"></span>
-            </div>
-            <div class="socialMedia">
-                <ul>
-                    <li>
-                        <a href="https://web.facebook.com/RobMovieworld/?_rdc=1&_rdr"><img class="socialMedia" src="img/facebook.png"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/robinsonsmovieworld/?hl=en"><img class="socialMedia" src="img/instagram.png"></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/robmovieworld?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="socialMedia" src="img/twitter.png"></a>
-                    </li>
-                </ul>
-            </div>
+    <div class="underBanner">
+        <div class="timeBox">
+            <span id="time"></span>
+            |
+            <span id="date"></span>
         </div>
+        <div class="socialMedia">
+            <ul>
+                <li>
+                    <a href="https://web.facebook.com/RobMovieworld/?_rdc=1&_rdr"><img class="socialMedia" src="img/facebook.png"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/robinsonsmovieworld/?hl=en"><img class="socialMedia" src="img/instagram.png"></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/robmovieworld?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="socialMedia" src="img/twitter.png"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
-    <section style="padding-bottom: 105.5px;">
-        <p>ADVANCE TICKET SELLING</p>
+    <section>
+        <p>NOW SHOWING</p>
         <div class="slideShowContainer">
-
             <?php
                 $sql = "SELECT * FROM movie WHERE status LIKE '%1%'";
                 if($result = mysqli_query($link, $sql)){
@@ -78,14 +77,52 @@
                     echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
                 } 
             ?>
-            
         </div>
     </section>
+    <section>
+        <p>ADVANCE TICKET SELLING</p>
+        <div class="slideShowContainer">
+            <?php
+                $sql = "SELECT * FROM movie WHERE status LIKE '%1%'";
+                if($result = mysqli_query($link, $sql)){
+                    if(mysqli_num_rows($result) > 0){
+                        while($row = mysqli_fetch_array($result)){
+                                echo "<a href=''><img class='slideShow' src='" . $row['posterPath'] . "'></a>";
+                        }
+                        mysqli_free_result($result);
+                    } else{
+                        echo "No records matching your query were found.";
+                    }
+                } else{
+                    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+                } 
+            ?>
+        </div>
+    </section>
+    <section>
+        <p>COMING SOON</p>
+        <div class="slideShowContainer">
+            <?php
+                $sql = "SELECT * FROM movie WHERE status LIKE '%2%'";
+                if($result = mysqli_query($link, $sql)){
+                    if(mysqli_num_rows($result) > 0){
+                        while($row = mysqli_fetch_array($result)){
+                                echo "<a href=''><img class='slideShow' src='" . $row['posterPath'] . "'></a>";
+                        }
+                        mysqli_free_result($result);
+                    } else{
+                        echo "No records matching your query were found.";
+                    }
+                } else{
+                    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+                } 
+            ?>
+        </div>
+    </section>
+    <div class="forFooter">
+        <p>© 2013 Robinsons Movieworld</p>            
+    </div>
 </body>
-
-<footer class="forFooter">
-    <p>&copy;2013 Robinsons Movieworld</p>
-</footer>
 
 <script>
     const forDate = new Date();

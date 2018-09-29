@@ -17,7 +17,7 @@
 <body onload="startTime()">
     <banner>
         <div class="forBanner">
-            <a href="home.php"><img class="logo" src="img/logo.png"></a>
+            <a href="index.php"><img class="logo" src="img/logo.png"></a>
                 <nav id="navBar">
                     <ul>
                         <li><a href="#" style="color: yellow">SEE SCHEDULE</a>
@@ -81,11 +81,11 @@
             
         </div>
     </section>
-</body>
 
-<footer class="forFooter">
-    <p>&copy;2013 Robinsons Movieworld</p>
-</footer>
+    <div class="forFooter">
+        <p>&copy;2013 Robinsons Movieworld</p>
+    </div>
+</body>
 
 <script>
     const forDate = new Date();

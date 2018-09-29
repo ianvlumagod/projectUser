@@ -123,28 +123,14 @@ p{
 
 .forFooter{
     width: 100%;
-    position: sticky;
+    /* position: fixed; */
     background: #d50000;
     font-family: 'Montserrat';
     color: white;
-    bottom: 0;
-}
-
-.forFooterHome{
-    width: 100%;
-    position: absolute;
-    background: #d50000;
-    font-family: 'Montserrat';
-    color: white;
+    bottom: 10px;
 }
 
 .forFooter p{
-    font-size: 15px;    
-    padding: 10px 0 10px 0; 
-    text-align: center;
-}
-
-.forFooterHome p{
     font-size: 15px;    
     padding: 10px 0 10px 0; 
     text-align: center;

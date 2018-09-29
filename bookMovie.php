@@ -17,7 +17,7 @@
 <body onload="startTime()">
     <banner>
         <div class="forBanner">
-            <a href="home.php"><img class="logo" src="img/logo.png"></a>
+            <a href="index.php"><img class="logo" src="img/logo.png"></a>
                 <nav id="navBar">
                     <ul>
                         <li><a href="#" style="color: yellow">SEE SCHEDULE</a>
@@ -59,36 +59,11 @@
             </div>
         </div>
 
-    <section>
-        <p>NOW SHOWING</p>
-        <div class="slideShowContainer">
-            <a href=""><img class="slideShow" src="img/MI_Fallout.jpg"></a>
-            <a href=""><img class="slideShow" src="img/oceans8Final.jpg"></a>
-            <a href=""><img class="slideShow" src="img/scyscraperFinal.jpg"></a>
-        </div>
-    </section>
-    <section>
-        <p>ADVANCE TICKET SELLING</p>
-        <div class="slideShowContainer">
-            <a href=""><img class="slideShow" src="img/MI_Fallout.jpg"></a>
-            <a href=""><img class="slideShow" src="img/oceans8Final.jpg"></a>
-            <a href=""><img class="slideShow" src="img/scyscraperFinal.jpg"></a>
-        </div>
-    </section>
-    <section>
-        <p>COMING SOON</p>
-        <div class="slideShowContainer">
-            <a href=""><img class="slideShow" src="img/goyo.jpg"></a>
-            <a href=""><img class="slideShow" src="img/TheEqualizer2.jpg"></a>
-            <a href=""><img class="slideShow" src="img/johnyEnglish.jpg"></a>
-        </div>
-    </section>
+
 </body>
 
-<footer>
-        <div class="forFooterHome">
-            <p>© 2013 Robinsons Movieworld</p>            
-        </div>
+<footer class="forFooter">
+    <p>&copy;2013 Robinsons Movieworld</p>
 </footer>
 
 <script>
